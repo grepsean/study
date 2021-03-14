@@ -59,6 +59,7 @@ unreviewed postmortem는 존재하지 않을 수 있다. 각 draft 리뷰가 완
 
 
 # Introducing a Postmortem Culture
+postmortem 문화를 조직에 도입하는 것은 말처럼 쉽지는 않다. 계속적으로 구축하고 강화해나가려는 노력이 필요하다.
 
 
 
