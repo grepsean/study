@@ -36,7 +36,7 @@ Blameless postmortems 작성은 여렵다. 왜냐면 postmortem format은 명확
 # Collaborate and Share Knowledge
 협업은 가치가 있고, postmortem 절차는 예외가 없다. postmortem은 모든 단계에 대한 협업과 지식 공유를 포함한다. 
 
-우리의 postmortem 문서는 Google docs를 사용하며 in-house template을 활용한다. (see [Example Postmortem](https://sre.google/sre-book/postmortem-culture/)) 특정 툴의 사용과 상관없이 아래의 피쳐를 확인해보자.
+우리의 postmortem 문서는 Google docs를 사용하며 in-house template을 활용한다. (see [Example Postmortem](https://sre.google/sre-book/example-postmortem/)) 특정 툴의 사용과 상관없이 아래의 피쳐를 확인해보자.
 
 * Real-time collaboration : 데이터와 아이디어를 빠를게 취합할 수 있게해준다. postmortem을 작성하는 초기에 필수적이다. 
 * An open commenting/annotation system : crowdsourcing solutions을 쉽게 만들고 커버리지를 개선한다.
