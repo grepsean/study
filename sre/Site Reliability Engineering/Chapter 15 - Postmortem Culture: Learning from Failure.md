@@ -59,11 +59,48 @@ unreviewed postmortem는 존재하지 않을 수 있다. 각 draft 리뷰가 완
 
 
 # Introducing a Postmortem Culture
-postmortem 문화를 조직에 도입하는 것은 말처럼 쉽지는 않다. 계속적으로 구축하고 강화해나가려는 노력이 필요하다.
+postmortem 문화를 조직에 도입하는 것은 말처럼 쉽지는 않다. 계속적으로 구축하고 강화해나가려는 노력이 필요하다. 리뷰와 협업 과정에서 고위 경영진의 적극적인 참여를 통해 공동의 postmortem 문화를 강화한다. 운영진은 이러한 문화를 장려할 수 있지만, blameless postmortems는 이상적으로 엔지니어의 동기 부여의 결과이다. postmortem 문화를 육성한다는 측면에서, SRE는 시스템 인프라에 대해서 무엇을 배웠는가를 전파하는 활동을 적극적으로 한다.
+
+### Postmortem of the month
+매월 뉴스레터를 통해서, 흥미롭고 잘 쓰여진 postmortem을 전체 조직에 공유한다.
+
+### Google+ postmortem group
+이 그룹은 내외부의 postmortems과, 모범 사례, 논평들을 공유하고 논의한다.
+
+### Postmortem reading clubs
+팀에서 정기적으로 postmortem 리딩 클럽을 호스트한다. 여기에서 흥미롭고 영향력있는 postmortem을 가지고와서 (맛있는 다과와 함께) 참가자와 비참가자, 구글러와 장애에서 배운것과 그 여파에 대해서 논의한다. 종종 리뷰하는 postmortem은 몇달 또는 몇년 지난 것들이다.
+
+### Wheel of Misfortune
+새로운 SRE팀은 Wheel of Misfortune 훈련을 한다.(see [Disaster Role Playing](https://sre.google/sre-book/accelerating-sre-on-call#xref_training_disaster-rpg)) 이전 postmortemdms를 재현된다. 기존의 장애 관리자가 참여하여 가능하면 "실제"처럼 경험할 수 있도록 도와준다.
 
 
+조직에 postmortems을 도입하는 가장 큰 challenges는 이러한 준비를 위한 노력이 얼마나 가치있는가의 질문이 나올 수 있다는 것이다. 아래의 전략은 이러한 challenge를 직면할때 도움이 될 수 있다.
+
+* workflow에 대한 postmortems이 쉽다. 여러 성공적으로 완료된 postmortems이 포함된 시험기간은 이런 가치를 증명하는데 도움이 된다. 게다가 postmortem을 시작해야하는 조건이 무엇인지 식별하는데 도움이 된다. 
+* 효과적인 postmortems을 작성하는 것이 앞서 언급한 사회적인 방법통한 공개적으로 보상받고 유명한 관행인지 확인해야한다. 
+* 고위 경영진의 확인과 참여를 권장한다. Larry Page도 postmortems의 높은 가치에 대해서 말한다.
+
+# Best Practice: Visibly Reward People for Doing the Right Thing
+구글의 설립자인 Larry Page and Sergey Brin는 HQ인 California Mountain View에서 매주 라이브로 진행되는 TGIF를 주최한다. 2014 TGIF에서 "The Art of the Postmortem,"라는 주제를 다뤘는데, 매우 영향이 큰 장애에 대한 SRE의 유명한 discussion이었다. 한 SRE 담당이 그가 최근에 올린 release에 대해서 논의를 했다. 철저한 tesing에도 불구하고 얘기치 못한 interactoin으로 4분동안 매우 중요한 서비스가 다운되었다. 
+장애는 오직 마지막 4분이었지만, SRE는 바로 변경사항을 롤백하여 더 길고 큰 중단을 피할 수 있었다. 그래서 이 엔지니어는 two peer bonuses를 받았을 뿐만 아니라 구글의 설립자와 몇천명의 구글러들이 참여한 TGIF 관중들에게 엄청난 박수를 받았다. 이런 행사에서뿐만 아니라 잘 작성된 postmortems 이나 뛰어난 장애 처리에 대해서 칭찬을 이끌어낼 수 있는 내부 소셜 네트워크를 가지고 있다. 이것은 동료와 CEO나 모든 사람들이 이러한 기여를 잘 알 수 있는 많은 곳중 한 예이다.
 
 
+# Best Practice: Ask for Feedback on Postmortem Effectiveness
+구글에서, 제기된 문제를 처리하고 혁신을 내부적으로 공유하는데 힘쓰고 있다. 우리는 주기적으로 목표를 이루기위해 어떻게 postmortem 절차를 세우고, 어떻게 개선시킬 수 있는지 조사하고 있다. 이렇게 질문을 한다. 
+* 문화가 당신의 일을 지원하는가?
+* postmortem을 작성하는데 너무 힘들진 않은가?
+* 당신의 팀에서는 어떤 모범 사례를 다른 팀에 추천하는가?
+* 개발하는데 어떤 종류의 툴을 싶은가?
+이러한 조사의 결과는 SRE팀이 postmortem culture의 효율을 올리기 위해 개선을 요청할 수 있는 기회를 준다. 
 
+장애 관리 및 후속 조치(follow-up)의 운영 측면 이외에 postmortem 실천은 구글의 문화와 섞이게 된다. 
+어떠한 중요한 장애라도 포괄적인 postmortem을 따르게되므로써 이제 문화의 표준이 되었다.
+
+# Conclusion and Ongoing Improvements
+postmortem culture를 육성하는데 계속적인 투자 덕분에 구글은 outages를 줄이고 더 나은 고객의 경험을 조성한다고 확신할 수 있다. 우리의 "Postmortems at Google" working group은 blameless postmortems 문화에 기여한 하나의 예이다. 
+이 그룹은 postmortem 노력을 회사 전체에 걸쳐 조정한다. postmortem templates을 같이 모으고, 장에 발생시 사용되는 툴에서 얻은 데이터를 통해 postmortem 생성을 자동화하고, postmortems으로부터 데이터 추츨을 자동화할 수 있게 도와서 추세 분석을 할 수 있게 한다. 
+우리는 YouTube, Google Fiber, Gmail, Google Cloud, AdWords, and Google Maps와 같은 서로 다른 제품들로부터 나온 모범 사례를 통해서 협업할 수 있게 되었다. 이러한 제품이 많이 다양하더라도, 그들은 이러한 장애로부터 배운 공통적인 목표(universal goal)로 모두 postmortems을 수행한다. 
+
+엄청 많은 postmortems이 매월 매월 구글 전체적으로 생성되면서, postmortems을 aggregate하는 툴이 매우 유용해지고 있다. 이러한 툴은 여러 제품의 경계를 걸쳐 개선을 위해 일반적인 주제와 영역을 식별하는데 도움을 준다. 이해력과 자동화된 분석을 가능하게 하기 위해서, 우리는 최근 postmortem template에 metadata fields 추가하여 개선했다. 이 도메인에서의 향후 작업에는 우리의 weakness를 예측하고, 실시간 장애 분석과 장애의 재발상을 줄이는 것에 도움을 받기 위한 machine learning 작업이 포함되어 있다.
 
 
